@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Alunos</title>
+    <script src="media.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tabela-alunos"></div>
+    <div id="info-medias" class="info-container">
+        <div class="info-linha">
+            <p>Média P1 geral da turma: <span id="mediaP1"></span></p>
+            <p>Quantidade aprovados: <span id="aprovados"></span></p>
+
+        </div>
+        <div class="info-linha">
+            <p>Média P2 geral da turma: <span id="mediaP2"></span></p>
+
+            <p>Quantidade reprovados: <span id="reprovados"></span></p>
+        </div>
+    </div>
+
+    <script>
+        var alunos = [
+            {nome: "João Silva", ra: "0050589379010", curso:"Sistemas para Internet", idade: 19, notaP1: 7, notaP2: 8.5},
+            {nome: "Lucas Pereira", ra: "0050589379005", curso:"Sistemas para Internet", idade: 20, notaP1: 6.5, notaP2: 6},
+            {nome: "Laura Santos", ra: "0050589379031", curso: "Análise e Desenvolvimento de Sistemas", idade: 21, notaP1: 9, notaP2: 8},
+            {nome: "Mariana Almeida", ra: "0050589379022", curso: "Ciência de Dados", idade: 21, notaP1: 5, notaP2: 6 },
+            {nome: "Natália Lima", ra: "0050589379017", curso: "Sistemas para Internet", idade: 18, notaP1: 6, notaP2: 5.5 },
+            {nome: "Pedro Rocha", ra: "0050589379009", curso: "Análise e Desenvolvimento de Sistemas", idade: 23, notaP1: 10, notaP2: 9},
+            {nome: "Rayssa Souza", ra: "0050589379030", curso: "Sistemas para Internet", idade: 18, notaP1: 4, notaP2: 6},
+            {nome: "Rafael Oliveira", ra: "0050589379023", curso: "Ciência de Dados", idade: 22, notaP1: 10, notaP2: 9},
+            {nome: "Sabrina Nunes", ra: "0050589379002", curso: "Ciência de Dados", idade: 19, notaP1: 9, notaP2: 6.5},
+            {nome: "Yasmin Costa", ra: "0050589379011", curso: "Ciência de Dados", idade: 22, notaP1: 8, notaP2: 7}
+            ];
+        gerarAlunos(alunos);
+    </script>
+</body>
+</html>
